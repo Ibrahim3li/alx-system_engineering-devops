@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname "*.gif" -not -d | while read -r file; do filename=${file%.gif} echo "$filename"
+find . -type f -iname "*.gif" -not -d | sort -f | sed -E 's/\.gif$//'
