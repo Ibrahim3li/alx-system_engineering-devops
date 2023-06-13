@@ -1,2 +1,2 @@
 #!/bin/bash
-$ echo "number_in_base_2" | bc -l -ibase=2
+echo $((2#BINARY)o)
